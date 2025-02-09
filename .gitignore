@@ -1,0 +1,39 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Ignore Helm files
+*.tgz
+charts/
+tmp/
+
+# Ignore Kubernetes config
+.kube/
+kubeconfig
+config.yaml
+
+# Ignore Python & VS Code related files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.vscode/
+
+# Ignore logs & temp files
+*.log
+*.out
+*.tmp
+.DS_Store
+
+# Ignore SSH & sensitive files
+id_rsa
+id_rsa.pub
+*.pem
+*.env
+.env.local
+secrets/
+
+# Ignore Git-related metadata
+.git/
