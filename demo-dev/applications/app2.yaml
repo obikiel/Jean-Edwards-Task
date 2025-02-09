@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/your-username/demo-dev.git
+    repoURL: https://github.com/obikiel/Jean-Edwards-Task.git
     targetRevision: main
     path: HelmCharts/ChartTest1
   destination:
