@@ -25,7 +25,6 @@ Obikiel1 and obikiel2
   -p 80:80 -p 443:443 \
   --name rancher rancher/rancher:latest
 
-￼![alt text](<docker-image.png>)
 
 - Obikiel1 is the server for Rancher
 
@@ -50,8 +49,6 @@ Obikiel1 and obikiel2
 - curl -fL https://20.84.119.220/system-agent-install.sh | sudo sh -s - --server https://20.84.119.220 --label 'cattle.io/os=linux' --token qtmhqwpggzn6gf2l6r9wh99z2zpzm8rrpnpsnfv8hv8d8zmts5wl6p --ca-checksum 79b2fd069b563d0a51ad97d8b0c2a32ed84629e1227edfdcac47b92043e5a0d1 --etcd --controlplane --worker
 
 - curl --insecure -fL https://20.84.119.220/system-agent-install.sh | sudo sh -s - --server https://20.84.119.220 --label 'cattle.io/os=linux' --token qtmhqwpggzn6gf2l6r9wh99z2zpzm8rrpnpsnfv8hv8d8zmts5wl6p --ca-checksum 79b2fd069b563d0a51ad97d8b0c2a32ed84629e1227edfdcac47b92043e5a0d1 --etcd --controlplane --worker
-
-![alt text](<registration.png>)
 ￼
 
 - I was able to get the cluster ACTIVE
@@ -60,14 +57,12 @@ Obikiel1 and obikiel2
 
 ===============================================================
 
-## On my local VM , I was able to access the nodes 
-
-![alt text](<nodes.png>)
+- On my local VM , I was able to access the nodes 
 
 
 ## Using terraform to install argo-cd
 ￼
-![alt text](<terraform-code.png>)
+- check main.tf
 
 
 ## I was able to confirm that argo cd has been deployed
@@ -78,10 +73,8 @@ Obikiel1 and obikiel2
 
 - kubectl port-forward svc/argocd-server -n argocd 8080:443
 
-![alt text](<forwarded-argo-cd.png>)
-
 ￼
-## I then proceed to retrieve the password and sign into  argo Cd
+- I then proceed to retrieve the password and sign into  argo Cd
 
 ![alt text](<argo-sigin.png>)
 
